@@ -1,0 +1,8 @@
+#!name=Inception AIGC 分流
+#!desc=将 api.inceptionlabs.ai（Inception Labs）流量加入 AIGC 策略组，由 AIGC 规则集代理
+#!system=iOS
+#!author=NOIR
+#!version=1.0.0
+
+[Rule]
+DOMAIN,api.inceptionlabs.ai,AIGC
