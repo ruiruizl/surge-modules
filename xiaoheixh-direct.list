@@ -1,0 +1,5 @@
+# NAME: 小黑 Emby 直连
+# FORMAT: Surge RULE-SET
+# 仅匹配下列两个完整域名，出站策略由 RULE-SET 引用行指定。
+DOMAIN,dmyg3.xiaoheixh.de
+DOMAIN,sl3.xiaoheixh.de
