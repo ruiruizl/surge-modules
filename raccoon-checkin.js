@@ -312,7 +312,7 @@ function runCheckin(cb) {
     if (e) return cb({ ok: false, title: "小浣熊签到失败", subtitle: e.message, body: "" });
     requestJson("GET", "/api/web/office/v3/setting_info", token, desktopHeaders(), 20, function (err1, info) {
       var grantNote = err1 ? ("发放接口: " + err1.message) : toastText(info);
-      requestJson("GET", "/api/web/points/v1/bills?paging.limit=20&paging.offset=0", token, {}, 25, function (err2, bills) {
+      requestJson("GET", "/api/web/points/v1/bills?paging.limit=100&paging.offset=0", token, {}, 25, function (err2, bills) {
         var sum = 0, names = [];
         var today = beijingToday();
         for (var i = 0; i < ((bills && bills.items) || []).length; i++) {
